@@ -10,11 +10,15 @@ vim.keymap.set('n', '<C-k>', ':wincmd k<CR>')
 vim.keymap.set('n', '<C-j>', ':wincmd j<CR>')
 vim.keymap.set('n', '<C-h>', ':wincmd h<CR>')
 vim.keymap.set('n', '<C-l>', ':wincmd l<CR>')
+vim.keymap.set('n', '<C-w>s', ':new<CR>') -- make ^ws open blank tab
+vim.keymap.set('n', '<C-w>v', ':vnew<CR>') -- " ^wv "
 
 -- other
 vim.cmd("set number") -- current line num
 vim.cmd("set rnu") -- rel line num
 vim.cmd("set nowrap") -- no wrap
+vim.cmd("set splitbelow") -- open newly-split windows below
+vim.cmd("set splitright") -- " to the right
 
 ---=== Lazy Stuff ===---
 -- lazy.nvim

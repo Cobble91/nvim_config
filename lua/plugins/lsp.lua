@@ -134,7 +134,7 @@ return {
           -- ^space to open menu
           ['<C-Space>'] = cmp.mapping.complete(),
           -- Super tab
-          ['<C-j>'] = cmp.mapping(function(fallback)
+          ['<Tab>'] = cmp.mapping(function(fallback)
             local luasnip = require('luasnip')
             local col = vim.fn.col('.') - 1
 
@@ -150,7 +150,7 @@ return {
           end, {'i', 's'}),
 
           -- Super shift tab
-          ['<C-k>'] = cmp.mapping(function(fallback)
+          ['<S-tab>'] = cmp.mapping(function(fallback)
             local luasnip = require('luasnip')
 
             if cmp.visible() then
